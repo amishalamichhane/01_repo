@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTTP</title>
+    <style>
+      h1 {
+        /* color:blue; */
+        font-family: monospace, serif, sans-serif;
+        font-size: larger;
+      }
+      p.para {
+        padding: 10px;
+        margin: 15px;
+        font-family: serif, monospace, cursive;
+        font-size: large;
+        text-align: justify;
+      }
+
+      body {
+        background-color: #f4f2df;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Q1. What is HyperText Transfer Protocol(HTTP)?</h1>
+    <p class="para">
+      It is an application layer protocol which is used for transmitting
+      hypermedia documents like HTML. HTTP is used for communication between web browser and web server.It doesnot require any certification. So, it is one of the most widely used protocol
+      for data transfer.
+      <br />
+    </p>
+    <h1>Q2. Why HTTP is called Stateless Protocol?</h1>
+    <p class="para">
+      Once the request is made and response is sent back to the user or clients,
+      then the connection will be dropped or terminated. In this way, server
+      will forget all the request sent by clients which means once the transaction ends the connection between the browser and the server is also lost. Therefore ,HTTP is called as a stateless protocol.
+      <br />
+    </p>
+    <h1>
+      Q3. Describe the three phases of establishing a session using
+      Client-server Protocols such as HTTP?
+    </h1>
+    <p class="para">
+      The Client-server model is a distributed application structure that
+      partitions task or workload between providers of a resource or service,
+      called servers, and service requesters called clients. In client server
+      protocols such as HTTP, session has three phases:
+      <br />
+      <b>1. Establishing a connection: </b>
+      In client-server protocol, the clients establish the connection. Opening a
+      connection in HTTP means initiating a connection in the underlying
+      transport layer, usually this is TCP with default port for an HTTP is 80.
+      The function of url of the page is to fetch contains both domain name, and
+      port number.
+      <br /><br />
+
+      <b>2. Sending a client request: </b>
+      Once the connection is established, the web browser send the request to
+      the server with text directives separated by CRLF which which is divided
+      into threee blocks: <br />
+      a. First line which contains a request followed by its parameter such as
+      path of document and http protocol version.<br />
+      b. Following lines represent as HTTP header, providing the server
+      information about what types of data is appropriate.<br />
+      c. The final block is an optional data block, which may contain further
+      data mainly used by the POST method.
+
+      <br /><br />
+
+      <b>3. Structure of a server response: </b>
+      After the connected agent has sent its request, the web server processes
+      it, and ultimately returns a response. Similar to a client request, a
+      server response is formed of text directives, separated by CRLF, though
+      divided into three blocks:
+      <br /><br />
+      The first line, the status line, consists of an acknowledgment of the HTTP
+      version used, followed by a status request (and its brief meaning in
+      human-readable text). Subsequent lines represent specific HTTP headers,
+      giving the client information about the data sent (e.g. type, data size,
+      compression algorithm used, hints about caching). Similarly to the block
+      of HTTP headers for a client request, these HTTP headers form a block
+      ending with an empty line. The final block is a data block, which contains
+      the optional data.
+      <br />
+    </p>
+
+    <h1>Q4. Describe the parameters on a get and post request ?</h1>
+    <p class="para">
+      The GET method requests a data representation of the specified resource.
+      Requests using GET should only retrieve data. <br>The POST method sends data
+      to a server so it may change its state. This is the method often used for
+      HTML Forms.
+    </p>
+    <h1>
+      Q5. What are the HTTP response status code and What do the HTTP status
+      codes, 200, and 404 indicate?
+    </h1>
+    <p class="para">
+      HTTP response status codes determines whether a specific HTTP request has
+      been successfully completed or not. Responses are grouped in five
+      classes:<br /><br />
+      i. Informational responses (100–199)<br />
+      ii. Successful responses (200–299)<br />
+      iii. Redirects (300–399)<br />
+      iv. Client errors (400–499)<br />
+      v. Server errors (500–599)<br>
+      <b>HTTP status codes 200 indicate:</b> Request has
+      succeeded.<br><b> HTTP status codes 404 indicate:</b> Server can not find the
+      requested resource. In the browser, this means the URL is not recognized.
+    </p>
+    <h1>Q6. What are HTTP Cookies? Give an example.</h1>
+    <p class="para">
+      A small piece of data or files that a server sends to the user's web
+      browser is called cookies.it's used to tell if two requests came from the
+      same browser — keeping a user logged-in. <i>For example:</i> It remembers
+      stateful information for the stateless HTTP protocol.
+    </p>
+    <h1>Q7. Why are cookies a security issue?</h1>
+    <p class="para">
+      Cookies transmits Web server to a Web browser,the Web server can keep
+      track of the user’s activity on a specific Web site.Cookies are used to
+      thieve periods of another consumer and as a result can commit fraudulent
+      acts.The message that the Web server conveys to the browser is in the form
+      of an HTTP header that consists of a text-only string. The text is entered
+      into the memory of the browser which can be used for monitoring the
+      browsing records of a user which create cookies a security issues.
+    </p>
+    <h1>Q8. Describe session hijacking and XSS ?</h1>
+    <p class="para">
+      <b>Session hijacking:</b>
+      The session hijacking assault consists of the exploitation of the internet
+      session manipulate mechanism, that's normally managed for a session
+      token.The session hijacking assault compromises the consultation token via
+      stealing orpredicting a legitimate session token to advantage unauthorized
+      access to the web server. This is probably the maximum risky and enormous
+      approach of internet consultation hijacking. With the aid of
+      exploitingserver or application vulnerabilities, attackers can inject
+      patron-facet scripts (generally javascript) into web pages,causing your
+      browser to execute arbitrary code while it masses a compromised web page.
+      If the server doesn’t set thehttponly characteristic in session cookies,
+      injected scripts can advantage get right of entry to on your session
+      key,supplying attackers with the necessary statistics for session
+      hijacking.<br>
+      <b>Cross-site scripting (XSS):</b> This is probably the most dangerous and widespread method of web session hijacking. ... If the server doesn't set the HttpOnly attribute in session cookies, injected scripts can gain access to your session key, providing attackers with the necessary information for session hijacking.
+    </p>
+
+    <h1>Q9. Describe Cross-site request forgery(CSRF)</h1>
+    <p class="para">
+      Csrf confused deputy attack against the web browser to submit a malicious
+      request. It inherits the identity and privilegesof the victim to carry out
+      an undesired characteristic at the sufferer’s behalf. For maximum sites,
+      browser requestsmechanically encompass any credentials related to the
+      site, including the user’s consultation cookie, ip deal with, homewindows
+      area credentials, and so on. Consequently, if the user is currently
+      authenticated to the web site, the websiteonline will have no way to
+      distinguish among the cast request despatched via the victim and a valid
+      request despatchedwith the aid of the sufferer. Csrf assaults goal
+      capability that causes a nation trade on the server, which include
+      converting the sufferer’s e-mail cope with or password, or buying
+      something. Forcing the victim to retrieve statistics doesn’t advantage an
+      attacker due to the fact the attacker doesn’t get hold of the reaction,
+      the victim does. As such, csrf assaults goal kingdom-changing requests.
+      <br />
+      It’s occasionally viable to save the csrf attack on the vulnerable website
+      online itself. Such vulnerabilities are called “saved csrf flaws”. This
+      could be carried out by way of simply storing an img or iframe tag in a
+      area that accepts html, or by using a greater complex pass-site scripting
+      attack. If the assault can shop a csrf assault within the website online,
+      the severity of the attack is amplified. Specifically, the likelihood is
+      accelerated because the victim is much more likely to view the web page
+      containing the attack than some random page on the internet. The chance is
+      also increased due to the fact the victim is sure to be authenticated to
+      the web site already.
+    </p>
+    <br />
+    <h1>
+      Q10. What are Cross-site HTTP request (CORS) and what requests use CORS?
+    </h1>
+    <p class="para">
+      Pass-origin aid sharing (cors) is an http-header based mechanism that
+      allows a server to suggest another origins (domain, scheme, or port) than
+      its own from which a browser should allow loading of sources. Cors
+      additionally is predicated on a mechanism by which browsers make a
+      “preflight” request to the server website hosting the pass-beginning
+      useful resource, in order to test that the server will permit the actual
+      request. In that preflight, the browser sends headers that indicate the
+      http approach and headers in an effort to be used within the actual
+      request. An example of a go-origin request: the front-stop javascript code
+      served from https://area-a.Com uses xmlhttprequest to make a request for
+      https://area-b.Com/data.Json. For security reasons, browsers limit
+      move-origin http requests initiated from scripts. For example,
+      xmlhttprequest and the fetch api comply with the equal-beginning policy.
+      Which means a web software using the ones apis can most effective request
+      sources from the identical foundation the utility was loaded from except
+      the reaction from other origins consists of the right cors headers.
+      <br />
+    </p>
+  </body>
+</html>

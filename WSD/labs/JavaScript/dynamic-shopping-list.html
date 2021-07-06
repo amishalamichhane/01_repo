@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My shopping list</title>
+    <style>
+        #shoppingList{
+            border: 2px solid black;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(238, 240, 231);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="shoppingList">
+        <h1>Dynamic Shopping List</h1>
+        <form name="listform">Enter a new item: 
+            <input type="text" name="listname" />
+            <button type="button" name="addItem" id="addItem">Add Items</button>
+        </form>
+        <br><br>
+        <h2>MyShopping List</h2>
+        <ul id="items"></ul>
+    </div>
+
+    <script src="dynamic-shopping-list.js"></script>
+
+</body>
+
+</html>
