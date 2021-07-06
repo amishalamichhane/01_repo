@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    <title>Silly story generator</title>
+    <style>
+        .body{
+            border: 2px solid black;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(234, 227, 219);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+    <div class="TextGenerator">
+        <div>
+            <label for="customerName">Enter custom name:</label>
+            <input id="customerName" type="text" placeholder="Enter your name">
+        </div>
+        <br>
+        <div>
+            <label for="USA"> United Stated of America</label><input id="usa" type="radio" name="country" value="usa"> <br>
+            <label for="UK">United Kingdom</label><input id="London" type="radio" name="country" value="London">
+        </div><br><br>
+
+        <div>
+            <button id="button"> Click here</button>
+        </div>
+        <p id="sillystory"></p>
+    </div>
+</div>
+    <script src="silly-story-generator.js"></script>
+</body>
+
+</html>
